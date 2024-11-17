@@ -19,6 +19,7 @@ private:
          "Jaguar", "Fiat", "Land Rover", "Mitsubishi", "Peugeot", "Renault", 
          "Porsche", "Lexus", "Volvo", "Skoda", "Infiniti"};
 public:
+    
     Car() {
         make = manufacturers[rand() % NR_MANUFACTURERS];
         year = rand() % (YEAR_MAX - YEAR_MIN + 1) + YEAR_MIN;
@@ -31,10 +32,10 @@ public:
     void setYear(int yr)      { year = yr; }
     void setTransponder(int t) { transponder = t; }
 
-    void print() {
+    void print () {
         cout << "[" << year << " " << make << " (" << transponder << ")]\n";
     }
-    void print() const;
+    
 
 
 };

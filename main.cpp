@@ -16,7 +16,7 @@ int main() {
         tollBoothQueue.push_back(Car());
     }
     cout << "Initial queue:" << endl;
-    for (const auto& car : tollBoothQueue) {
+    for ( auto& car : tollBoothQueue) {
         car.print();
     }
    
@@ -44,7 +44,7 @@ int main() {
         if (tollBoothQueue.empty()) {
             cout << "    Empty" << endl;
         } else {
-            for (const auto& car : tollBoothQueue) {
+            for ( auto& car : tollBoothQueue) {
                 car.print();
             }
         }
